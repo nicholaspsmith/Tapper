@@ -34,6 +34,9 @@
                                     <constraint firstAttribute="height" constant="120" id="ply-t5-IRe"/>
                                 </constraints>
                                 <state key="normal" image="playbtn"/>
+                                <connections>
+                                    <action selector="onPlayButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hlT-wW-oLq"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="How many taps?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F9P-8P-jBr" userLabel="TapsText">
                                 <rect key="frame" x="193" y="359" width="249" height="45"/>
@@ -51,6 +54,9 @@
                                     <constraint firstAttribute="height" constant="170" id="k4c-cg-l9U"/>
                                 </constraints>
                                 <state key="normal" image="coin"/>
+                                <connections>
+                                    <action selector="onCoinTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CVe-nL-uDg"/>
+                                </connections>
                             </button>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="1000 Taps" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dYe-Sl-tyG" userLabel="TapsLbl">
                                 <rect key="frame" x="178" y="259" width="276" height="73"/>
@@ -81,6 +87,13 @@
                             <constraint firstItem="IYx-bN-hAe" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="rby-oB-mN5"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="coinBtn" destination="L1j-7A-gFK" id="NaS-hd-noF"/>
+                        <outlet property="howManyTapsTxt" destination="F9P-8P-jBr" id="Gbo-hV-c2t"/>
+                        <outlet property="logoImg" destination="lH2-yi-QW7" id="mfe-27-9KQ"/>
+                        <outlet property="playBtn" destination="sPc-fQ-0rC" id="sdh-NZ-glQ"/>
+                        <outlet property="tapsLbl" destination="dYe-Sl-tyG" id="xF5-tO-206"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
