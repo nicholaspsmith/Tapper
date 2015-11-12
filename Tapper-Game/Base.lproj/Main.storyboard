@@ -20,12 +20,42 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="retrobg" translatesAutoresizingMaskIntoConstraints="NO" id="IYx-bN-hAe">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tapper" translatesAutoresizingMaskIntoConstraints="NO" id="lH2-yi-QW7">
+                                <rect key="frame" x="147" y="53" width="307" height="104"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="307" id="5er-Kp-IZ9"/>
+                                    <constraint firstAttribute="height" constant="104" id="HGp-3V-yaO"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sPc-fQ-0rC">
+                                <rect key="frame" x="193" y="402" width="249" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="249" id="TJ6-vS-e0b"/>
+                                    <constraint firstAttribute="height" constant="120" id="ply-t5-IRe"/>
+                                </constraints>
+                                <state key="normal" image="playbtn"/>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="How many taps?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F9P-8P-jBr">
+                                <rect key="frame" x="193" y="359" width="249" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="vP5-aS-GYH"/>
+                                    <constraint firstAttribute="width" constant="249" id="zaP-7p-HnV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="sPc-fQ-0rC" firstAttribute="centerX" secondItem="F9P-8P-jBr" secondAttribute="centerX" id="0I1-vy-gKm"/>
+                            <constraint firstItem="lH2-yi-QW7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="33" id="0aE-04-Mqv"/>
+                            <constraint firstItem="lH2-yi-QW7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UcD-ie-COK"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="sPc-fQ-0rC" secondAttribute="bottom" constant="78" id="Vc0-yj-FkZ"/>
+                            <constraint firstItem="sPc-fQ-0rC" firstAttribute="top" secondItem="F9P-8P-jBr" secondAttribute="bottom" constant="18" id="XCb-1N-hoc"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="IYx-bN-hAe" secondAttribute="bottom" id="YbB-6u-i94"/>
                             <constraint firstItem="IYx-bN-hAe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gyA-mR-hY1"/>
                             <constraint firstAttribute="trailing" secondItem="IYx-bN-hAe" secondAttribute="trailing" id="nq3-p0-1od"/>
+                            <constraint firstItem="sPc-fQ-0rC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="poE-P9-bSM"/>
                             <constraint firstItem="IYx-bN-hAe" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="rby-oB-mN5"/>
                         </constraints>
                     </view>
@@ -36,6 +66,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Tapper" width="497" height="107"/>
+        <image name="playbtn" width="356" height="175"/>
         <image name="retrobg" width="800" height="800"/>
     </resources>
 </document>
